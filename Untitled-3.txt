@@ -1,0 +1,4 @@
+let square = require('./square.is');
+let mySquare = square(5);
+console.log('area = ' + mySquare.area());
+console.log('outline = ' + mySquare.outline());
