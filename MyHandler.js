@@ -1,6 +1,8 @@
 function start(res) {
-    let body = '<div>Hello, world! <br> I am in the cloud class.</div>';
+    let body = '<head><meta charset = "UTF-8"/></head>' 
+    body += '<body><div>Hello, world! <br> I am in the cloud class.</div>';
     body += '<div><a href="hello">hello 페이지</a></div>'
+    body += '</body>'
     res.writeHead(200, { 'content-Type': 'text/html', 'charset': 'UTF-8' });
     res.write(body);
     res.end();
