@@ -1,13 +1,13 @@
 function start(res) {
     let body = '<div>Hello, world! <br> I am in the cloud class.</div>';
     body += '<div><a href="hello">hello 페이지</a></div>'
-    res.writeHead(200, { 'content-Type': 'text/html' });
+    res.writeHead(200, { 'content-Type': 'text/html', 'charset': 'UTF-8' });
     res.write(body);
     res.end();
 }
 
 function hello(res) {
-    let body = 'hum information : <br> hum state : <br> hum set : ';
+    let body = 'This is my first web server.';
     res.writeHead(200, { 'content-Type': 'text/html' });
     res.write(body);
     res.end();
