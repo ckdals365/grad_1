@@ -18,7 +18,7 @@ function hello(res) {
 
 function wait(res) {
     setTimeout(function () {
-        let body = 'This is my first web server.';
+        let body = 'Thank you for waiting 5 seconds.';
         res.writeHead(200, { 'content-Type': 'text/html' });
         res.write(body);
         res.end();
