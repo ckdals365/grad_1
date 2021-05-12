@@ -1,5 +1,5 @@
 const fs = require('fs');
-const myHandler = require('./Myahndler');
+const myHandler = require('./Myhandler');
 
 function route(pathname, handle, res) {
     console.log('Routing request for' + pathname);
