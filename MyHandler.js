@@ -26,7 +26,7 @@ function wait(res) {
     }, 5000);
 }
 
-function randomwait(res) {
+function randomWait(res) {
     let waitTime = Math.round(Math.random()*10000.);
     setTimeout(function () {
         let body = 'Thank you for waiting ' + waitTime + ' ms.';
