@@ -78,8 +78,14 @@ function people(res) {
     str = fs.readFileSync('people.json', 'utf-8');
     obj = JSON.parse(str);
     console.log(obj.name + ': ' + obj.house);
+    body =
+        '<table><thead><tr><th>name</th><th></th>house</tr></thead><tbody><tr><td>' +
+        obj.name +
+        '</td><td>' +
+        obj.house +
+        '</td></tr></tbody></table>';
     res.writeHead(200, { 'content-Type': 'text/html' });
-    res.write(str);
+    res.write(body);
     res.end();
 }
 
