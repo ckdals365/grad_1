@@ -1,3 +1,3 @@
 git add --all
-git commit -m "simple web server running at localhost:8000"
+git commit -m "add wait page"
 git push -u origin master
