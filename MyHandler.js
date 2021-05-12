@@ -79,7 +79,7 @@ function people(res) {
     obj = JSON.parse(str);
     console.log(obj.name + ': ' + obj.house);
     body =
-        '<table><thead><tr><th>name</th><th></th>house</tr></thead><tbody><tr><td>' +
+        '<table><thead><tr><th>name</th><th>house</th></tr></thead><tbody><tr><td>' +
         obj.name +
         '</td><td>' +
         obj.house +
